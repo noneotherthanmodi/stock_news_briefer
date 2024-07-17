@@ -1,1 +1,8 @@
 .venv
+
+chromadb/*
+chromadb/chroma.sqlite3
+
+pdfs/
+
+chromadb/chroma.sqlite3
