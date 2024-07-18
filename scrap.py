@@ -71,8 +71,9 @@ async def process_pdf(message, index):
 
 
 async def main():
-    response = requests.get("http://localhost:8080/corporate_announcements")
+    response = requests.post("http://localhost:8080/corporate_announcements",json={"pages": 2})
     output = json.loads(response.text)
+    print(output)
 
     # Configure Gemini API
     api_key = GEMINI_API_KEY
